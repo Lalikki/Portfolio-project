@@ -1,5 +1,6 @@
 import React from "react"
 import logo from "../beer.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -14,19 +15,19 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="">Home <span className="sr-only"></span></a>
+                            <Link className="nav-link" to="/">Home <span className="sr-only"></span></Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="">About me</a>
+                            <Link className="nav-link" to="/about">About me</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="">Experience</a>
+                            <Link className="nav-link" to="/experience">Experience</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="">Portfolio</a>
+                            <Link className="nav-link" to="/portfolio">Portfolio</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="">Contacts</a>
+                            <Link className="nav-link" to="/contact">Contact</Link>
                         </li>
 
                     </ul>
@@ -37,4 +38,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;
