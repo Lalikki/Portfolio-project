@@ -1,6 +1,6 @@
 {
-  "homepage": "https://lalikki.github.io/Portfolio-project",
   "name": "portfolio",
+  "homepage": "https://lalikki.github.io/Portfolio-project/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
