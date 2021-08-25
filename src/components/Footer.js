@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 // import 'font-awesome/css/font-awesome.min.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -48,10 +49,11 @@ const Footer = () => {
                             <h6 className="text-uppercase fw-bold mb-2">
                                 Links
                             </h6>
-                            <span><FontAwesomeIcon icon={faGithubSquare} size="3x" /></span>
+                            <Link to="/about" className="button-github"><FontAwesomeIcon icon={faGithubSquare} size="3x" /></Link>
+                            {/* <span><FontAwesomeIcon icon={faGithubSquare} size="3x" /></span> */}
                             <p>
 
-                                <span><FontAwesomeIcon icon={faLinkedin} size="3x" /></span>
+                            <Link to="/about" className="button-github"><FontAwesomeIcon icon={faLinkedin} size="3x" /></Link>
                             </p>
 
                         </div>
