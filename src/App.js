@@ -15,12 +15,12 @@ function App() {
         <Navbar />
 
         <Switch>
-          <Route exact path="/Portfolio-project/">
+          <Route exact path="/">
             <Home />
 
           </Route>
 
-          <Route path="/Portfolio-project/about">
+          <Route path="/about">
             <About />
           </Route>
         </Switch>
