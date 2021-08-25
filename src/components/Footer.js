@@ -1,5 +1,7 @@
 import React from 'react'
-import 'font-awesome/css/font-awesome.min.css';
+// import 'font-awesome/css/font-awesome.min.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     return (
@@ -7,12 +9,17 @@ const Footer = () => {
 
         <footer className="text-center text-lg-start bg-light text-muted">
 
-            <section
-                className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+            {/* <section
+                className="d-flex justify-content-center justify-content-lg-between p-3 border-bottom"
             >
 
+                <div className="icon-links">
+                    <span><FontAwesomeIcon icon={faGithubSquare} size="3x" /></span>
+                    <span><FontAwesomeIcon icon={faLinkedin} size="3x" /></span>
+                </div>
+
                 <div className="me-5 d-none d-lg-block">
-                    <span>My links:</span>
+
                 </div>
 
                 <div>
@@ -22,23 +29,37 @@ const Footer = () => {
                     </a>
 
                     <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                    ><i className="fab fa-github"></i>
+                    >
+                        <FontAwesomeIcon icon={faGithubSquare} size="lg" />
                     </a>
                 </div>
 
-            </section>
+            </section> */}
 
 
 
-            <section className="">
-                <div className="container text-center text-md-start mt-5">
+            <section className="footer-main">
+                <div className="container text-center text-md-start mt-3">
 
-                    <div className="row mt-3">
+                    <div className="row mt-2">
 
-                        <div className="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2">
 
-                            <h6 className="text-uppercase fw-bold mb-4">
-                                <i className="fas fa-gem me-3"></i>About me
+                            <h6 className="text-uppercase fw-bold mb-2">
+                                Links
+                            </h6>
+                            <span><FontAwesomeIcon icon={faGithubSquare} size="3x" /></span>
+                            <p>
+
+                                <span><FontAwesomeIcon icon={faLinkedin} size="3x" /></span>
+                            </p>
+
+                        </div>
+
+                        <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2">
+
+                            <h6 className="text-uppercase fw-bold mb-2">
+                                About me
                             </h6>
                             <p>
                                 Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -47,9 +68,11 @@ const Footer = () => {
                         </div>
 
 
-                        <div className="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
 
-                            <h6 className="text-uppercase fw-bold mb-4">
+
+                        <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-2">
+
+                            <h6 className="text-uppercase fw-bold mb-2">
                                 Some of my projects
                             </h6>
                             <p>
@@ -61,8 +84,8 @@ const Footer = () => {
 
                         </div>
 
-                        <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                            <h6 className="text-uppercase fw-bold mb-4">
+                        <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-2">
+                            <h6 className="text-uppercase fw-bold mb-2">
                                 Contact
                             </h6>
                             <p>
@@ -74,7 +97,7 @@ const Footer = () => {
                 </div>
             </section>
 
-            <div className="text-center p-4">
+            <div className="text-center p-2">
                 © 2021 Copyright: Portfolio App
             </div>
         </footer>

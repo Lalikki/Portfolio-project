@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../beer.png";
+import logo from "../logo.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -25,9 +25,6 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/portfolio">Portfolio</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/contact">Contact</Link>
                         </li>
 
                     </ul>
