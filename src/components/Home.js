@@ -1,7 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
 import Particles from "react-particles-js";
-import { Link } from "react-router-dom";
+
 
 const Header = () => {
     return (
@@ -30,17 +30,26 @@ const Header = () => {
                 }
                 }
             />
+            {/* Upper main-info */}
             <div className="main-info">
-                <h1>Web development</h1>
+                <h1>Lauri Järvinen</h1>
+                <h3>ICT-Specialist</h3>
+
+                {/* <Link to="/about" className="btn-main-offer">Let's go!</Link> */}
+            </div>
+
+            {/* Lower main-info */}
+            <div className="main-info-lower">
+                <h2>My techstack</h2>
                 <Typed
                     className="typed-text"
-                    strings={["HTML", "CSS", "JavaScript", "React"]}
+                    strings={["HTML", "CSS", "JavaScript", "React", "Vue", "VBScript"]}
                     typeSpeed={40}
                     backSpeed={60}
                     loop
                 />
-                <Link to="/contact" className="btn-main-offer">Contact me</Link>
             </div>
+
         </div>
 
     )

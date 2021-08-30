@@ -92,6 +92,28 @@ nav ul li {
   border-top: 0.2rem solid var(--primary-orange);
 }
 
+/*FOOTER*/
+.social-link {
+  color: var(--primary-white) !important;
+}
+
+.social-link:hover {
+  color: var(--primary-orange) !important;
+}
+
+.project-link {
+  color: var(--primary-white) !important;
+  text-decoration: underline;
+}
+.project-link:hover {
+  color: var(--primary-orange) !important;
+}
+
+.footer-main {
+  color: var(--primary-white) !important;
+}
+
+
 /*HEADER*/
 .header-wrapper {
   position: relative;
@@ -103,11 +125,9 @@ nav ul li {
 
 .main-info{
   display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  
+  padding-top: 7rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -116,8 +136,29 @@ nav ul li {
   z-index: 1;
 }
 
+.main-info-lower {
+  display: flex;
+  position: relative;
+  padding-top: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  z-index: 1;
+
+}
+
 .main-info h1 {
   color: var(--primary-orange);
+}
+
+.main-info-lower h2 {
+  color: var(--primary-orange);
+}
+
+.main-info h3 {
+  color: var(--primary-white);
 }
 
 @media(max-width:768px){
